@@ -26,3 +26,4 @@ npm install react-router-dom@6
 
 2. **Tools** 🔧
     + [Chrome](https://github.com/topics/chrome)
+    + [Figma](https://github.com/topics/figma)
