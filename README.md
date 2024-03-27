@@ -15,7 +15,7 @@ npm install react-router-dom@6
 ```
 
 
-### Languages and tools
+### Languages and Tools 🗣️🔧
 
 1. **Languages** 🗣️
     + [HTML](https://github.com/topics/html)
