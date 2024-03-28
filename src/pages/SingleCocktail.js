@@ -16,8 +16,11 @@ const SingleCocktail = () => {
         const data = await response.json();
       } catch (error) {
         console.log(error);
+        setLoading(false)
       }
     }
+
+    getCocktails()
   }, [id])
 
   return (
