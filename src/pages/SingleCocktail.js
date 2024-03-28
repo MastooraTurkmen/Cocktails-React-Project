@@ -14,6 +14,13 @@ const SingleCocktail = () => {
       try {
         const response = await fetch(url);
         const data = await response.json();
+
+        if (data.drinks) {
+          console.log(data.drinks);
+        } else {
+          setCocktail(null)
+        }
+
       } catch (error) {
         console.log(error);
         setLoading(false)
