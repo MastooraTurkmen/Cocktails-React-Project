@@ -5,27 +5,27 @@ const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [searchForm, setSearchForm] = useState('a');
   const [cocktails, setCocktails] = useState([])
 
   const fetchData = async () => {
     setLoading(true)
     try {
-      const response = await fetch(`${url} ${searchForm}`)
+      const response = await fetch(`${url}${searchForm}`)
       const data = await response.json()
-      const { drink } = data
-      if (drink) {
-        setLoading(false)
-        const newCocktails = drink.map((item) => {
+      const { drinks } = data
+      console.log(data);
+      if (drinks) {
+        const newCocktails = drinks.map((item) => {
           const { idDrink, strDrink, strAlcoholic, strDrinkThumb, strGlass } = item;
-          return ({
+          return {
             id: idDrink,
             name: strDrink,
             info: strAlcoholic,
             image: strDrinkThumb,
             glass: strGlass
-          })
+          }
         })
         setCocktails(newCocktails)
 
