@@ -46,7 +46,7 @@ npm install react-router-dom@6
 
 #### Cocktails types
 
-![alt text](image-1.png)
+![alt text](./Screenshots/image-1.png)
 ![alt text](image-2.png)
 
 #### Single Cocktail
