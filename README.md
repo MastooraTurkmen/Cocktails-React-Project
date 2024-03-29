@@ -59,4 +59,4 @@ npm install react-router-dom@6
 
 #### About page
 
-![alt text](image-6.png)
+![alt text](./Screenshots/image-6.png)
