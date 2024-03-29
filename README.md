@@ -56,3 +56,7 @@ npm install react-router-dom@6
 #### Error
 
 ![alt text](image-5.png)
+
+#### About page
+
+![alt text](image-6.png)
