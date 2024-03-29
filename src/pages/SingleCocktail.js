@@ -12,7 +12,7 @@ const SingleCocktail = () => {
     setLoading(true)
     async function getCocktails() {
       try {
-        const response = await fetch(`${url} ${id}`);
+        const response = await fetch(`${url}${id}`);
         const data = await response.json();
 
         if (data.drinks) {
