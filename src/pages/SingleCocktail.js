@@ -17,7 +17,6 @@ const SingleCocktail = () => {
 
         if (data.drinks) {
           const {
-            idDrink: id,
             strDrink: name,
             strDrinkThumb: image,
             strAlcoholic: info,
@@ -37,7 +36,7 @@ const SingleCocktail = () => {
             strIngredient4,
             strIngredient5]
 
-          const newCocktail = { name, id, info, category, glass, ingredients, instructions }
+          const newCocktail = { name, info, category, glass, ingredients, instructions }
           setCocktail(newCocktail)
         } else {
           setCocktail(null)
@@ -59,6 +58,8 @@ const SingleCocktail = () => {
   if (!cocktail) {
     return <h2 className="section-title">no cocktail to display</h2>
   }
+
+  const { name, info, category, glass, ingredients, instructions } = cocktail
 
   return (
     <div>
