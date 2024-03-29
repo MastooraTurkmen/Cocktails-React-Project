@@ -37,3 +37,7 @@ npm install react-router-dom@6
 ### Screenshots of the Project
 
 ![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
