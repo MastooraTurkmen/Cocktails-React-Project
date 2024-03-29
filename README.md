@@ -33,3 +33,7 @@ npm install react-router-dom@6
    - [Figma](https://github.com/topics/figma)
    - [VSCode](https://github.com/topics/vscode)
    - [Netlify](https://github.com/topics/netlify)
+
+### Screenshots of the Project
+
+![alt text](image.png)
