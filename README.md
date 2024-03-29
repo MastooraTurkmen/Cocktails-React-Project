@@ -38,7 +38,7 @@ npm install react-router-dom@6
 
 #### Home page
 
-![alt text](image.png)
+![alt text](./Screenshots/image.png)
 
 #### When Loading
 
@@ -51,7 +51,7 @@ npm install react-router-dom@6
 
 #### Single Cocktail
 
-![alt text](image-3.png)
+![alt text](./Screenshots/image-3.png)
 
 #### Error
 
