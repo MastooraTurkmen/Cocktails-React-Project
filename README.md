@@ -52,6 +52,7 @@ npm install react-router-dom@6
 
 #### Single Cocktail
 
+![alt text](./Screenshots/image-8.png)
 ![alt text](./Screenshots/image-3.png)
 
 #### Error
