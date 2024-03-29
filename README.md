@@ -37,14 +37,22 @@ npm install react-router-dom@6
 ### Screenshots of the Project
 
 #### Home page
+
 ![alt text](image.png)
 
 #### When Loading
+
 ![alt text](image-4.png)
 
 #### Cocktails types
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
 #### Single Cocktail
+
 ![alt text](image-3.png)
+
+#### Error
+
+![alt text](image-5.png)
