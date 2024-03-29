@@ -12,7 +12,7 @@ const SingleCocktail = () => {
     setLoading(true)
     async function getCocktails() {
       try {
-        const response = await fetch(`${url}${id}`);
+        const response = await fetch(`${url} ${id}`);
         const data = await response.json();
 
         if (data.drinks) {
@@ -44,8 +44,8 @@ const SingleCocktail = () => {
 
       } catch (error) {
         console.log(error);
-        setLoading(false)
       }
+      setLoading(false)
     }
 
     getCocktails()
@@ -57,42 +57,42 @@ const SingleCocktail = () => {
 
   if (!cocktail) {
     return <h2 className="section-title">no cocktail to display</h2>
-  }
+  } else {
+    const { name, image, info, category, glass, ingredients, instructions } = cocktail
 
-  const { name, image, info, category, glass, ingredients, instructions } = cocktail
-
-  return (
-    <section>
-      <Link to='/' className='btn btn-primary'>back home</Link>
-      <h2 className='section-title'>{name}</h2>
-      <div className="drink">
-        <img src={image} alt={name} />
-        <div className="drink-info">
-          <p>
-            <span className='drink-data'>name: </span> {name}
-          </p>
-          <p>
-            <span className='drink-data'>category: </span> {category}
-          </p>
-          <p>
-            <span className='drink-data'>glass: </span> {glass}
-          </p>
-          <p>
-            <span className='drink-data'>instructions: </span> {instructions}
-          </p>
-          <p>
-            <span className='drink-data'>info: </span> {info}
-          </p>
-          <p>
-            <span className='drink-data'>ingredients: </span>
-            {ingredients.map((item, index) => {
-              return item ? <span key={index}>{item}</span> : null
-            })}
-          </p>
+    return (
+      <section className='section cocktail-section'>
+        <Link to='/' className='btn btn-primary'>back home</Link>
+        <h2 className='section-title'>{name}</h2>
+        <div className="drink">
+          <img src={image} alt={name} />
+          <div className="drink-info">
+            <p>
+              <span className='drink-data'>name: </span> {name}
+            </p>
+            <p>
+              <span className='drink-data'>category: </span> {category}
+            </p>
+            <p>
+              <span className='drink-data'>glass: </span> {glass}
+            </p>
+            <p>
+              <span className='drink-data'>instructions: </span> {instructions}
+            </p>
+            <p>
+              <span className='drink-data'>info: </span> {info}
+            </p>
+            <p>
+              <span className='drink-data'>ingredients: </span>
+              {ingredients.map((item, index) => {
+                return item ? <span key={index}>{item}</span> : null
+              })}
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  )
+      </section>
+    )
+  }
 }
 
 export default SingleCocktail
